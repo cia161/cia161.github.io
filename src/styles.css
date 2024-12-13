@@ -179,6 +179,7 @@ main {
     75% { transform: translate(10px, -10px) rotate(5deg); }
 }
 
+
 .hero .container {
     position: relative;
     z-index: 2;
