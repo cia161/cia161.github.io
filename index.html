@@ -52,6 +52,7 @@
             </div>
         </section>
 
+        <!-- ----------------------------------- ABOUT ----------------------------------- -->
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
@@ -73,6 +74,7 @@
                             <li>Hiking!</li>
                         </ul>
                     </div>
+                    <!-- ---------------------------- SKILLS -------------------------------- -->
                     <div class="skills">
                         <h3>Skills</h3>
                         <div class="skill">
@@ -112,90 +114,174 @@
             </div>
         </section>
 
+        <!-- -----------------------EXPERIENCES --------------------------- -->
         <section id="experiences" class="section">
-            <div class="container">
-                <h2 class="section-title">Experiences</h2>
-                <div class="timeline">
-                    <div class="experience-item">
-                        <h3>Software Engineering Intern</h3>
-                        <p>PwC</p>
-                        <p>May 2025 - Present</p>
+        <div class="container">
+            <h2 class="section-title">Experiences</h2>
+            
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="all">All</div>
+                <div class="filter-tab" data-filter="current">Current</div>
+                <div class="filter-tab" data-filter="tech">Tech</div>
+                <div class="filter-tab" data-filter="professional">Professional</div>
+                <div class="filter-tab" data-filter="research">Research</div>
+                <div class="filter-tab" data-filter="leadership">Leadership</div>
+            </div>
+            
+            <div class="experiences-grid">
+                <div class="experience-card" data-category="professional tech current">
+                    <div class="experience-header">
+                        <div class="experience-icon">💻</div>
+                        <div class="experience-details">
+                            <h3>Software Engineering Intern</h3>
+                            <p class="company-name">PwC</p>
+                            <span class="experience-date">May 2025 - Present</span>
+                            <span class="current-badge">Current</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>BLP Extern</h3>
-                        <p>Synchrony Financial</p>
-                        <p>May 2025</p>
+                </div>
+
+                <div class="experience-card" data-category="professional tech">
+                    <div class="experience-header">
+                        <div class="experience-icon">💼</div>
+                        <div class="experience-details">
+                            <h3>BLP Extern</h3>
+                            <p class="company-name">Synchrony Financial</p>
+                            <span class="experience-date">May 2025</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Co-Founder</h3>
-                        <p>blynk AI</p>
-                        <p>Feb 2025 - Present</p>
+                </div>
+
+                <div class="experience-card" data-category="tech current leadership">
+                    <div class="experience-header">
+                        <div class="experience-icon">🚀</div>
+                        <div class="experience-details">
+                            <h3>Co-Founder</h3>
+                            <p class="company-name">blynk AI</p>
+                            <span class="experience-date">Feb 2025 - Present</span>
+                            <span class="current-badge">Current</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Spring 2025 Cohort Member</h3>
-                        <p>Illinois Consulting Academy</p>
-                        <p>Nov 2024 - Present</p>
+                </div>
+
+                <div class="experience-card" data-category="current">
+                    <div class="experience-header">
+                        <div class="experience-icon">💡</div>
+                        <div class="experience-details">
+                            <h3>Spring 2025 Cohort Member</h3>
+                            <p class="company-name">Illinois Consulting Academy</p>
+                            <span class="experience-date">Jan 2025 - Present</span>
+                            <span class="current-badge">Current</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Product Management Fellow</h3>
-                        <p>Product Space, Inc.</p>
-                        <p>Aug 2024 - Present</p>
+                </div>
+
+                <div class="experience-card" data-category="research current">
+                    <div class="experience-header">
+                        <div class="experience-icon">🔬</div>
+                        <div class="experience-details">
+                            <h3>ML Undergraduate Researcher</h3>
+                            <p class="company-name">Illinois Computer Science</p>
+                            <span class="experience-date">Jan 2024 - Present</span>
+                            <span class="current-badge">Current</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Senior Consultant / Project Manager</h3>
-                        <p>Illinois Business Consulting</p>
-                        <p>Aug 2024 - Present</p>
+                </div>
+
+                 <div class="experience-card" data-category="professional tech">
+                    <div class="experience-header">
+                        <div class="experience-icon">💼</div>
+                        <div class="experience-details">
+                            <h3>INSIGHT Fellow: Strategy & Product</h3>
+                            <p class="company-name">Jane Street</p>
+                            <span class="experience-date">Aug 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Business Consultant</h3>
-                        <p>Illinois Business Consulting</p>
-                        <p>Feb 2024 - Aug 2024</p>
+                </div>
+
+                <div class="experience-card" data-category="tech leadership">
+                    <div class="experience-header">
+                        <div class="experience-icon">💻</div>
+                        <div class="experience-details">
+                            <h3>CS 124 Honors Project Manager</h3>
+                            <p class="company-name">Illinois Computer Science</p>
+                            <span class="experience-date">Jan 2024 - May 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>ML Undergraduate Researcher</h3>
-                        <p>Dr. Pablo D Robles Granda, Illinois Computer Science</p>
-                        <p>Jan 2024 - Present</p>
+                </div>
+
+                <div class="experience-card" data-category=" leadership">
+                    <div class="experience-header">
+                        <div class="experience-icon">💡</div>
+                        <div class="experience-details">
+                            <h3>Senior Consultant / Project Manager</h3>
+                            <p class="company-name">Illinois Business Consulting</p>
+                            <span class="experience-date">Jan 2024 - Dec 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>CS124 Honors Project Manager</h3>
-                        <p>Illinois Computer Science</p>
-                        <p>Jan 2024 - May 2024</p>
+                </div>
+
+                <div class="experience-card" data-category="tech current">
+                    <div class="experience-header">
+                        <div class="experience-icon">📱</div>
+                        <div class="experience-details">
+                            <h3>Product Management Fellow</h3>
+                            <p class="company-name">Product Space, Inc.</p>
+                            <span class="experience-date">Aug 2024 - Present</span>
+                            <span class="current-badge">Current</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Jane Street Fellow INSIGHT: Strategy & Product</h3>
-                        <p>Jane Street</p>
-                        <p>Aug 2024</p>
+                </div>
+
+                <div class="experience-card" data-category="professional tech">
+                    <div class="experience-header">
+                        <div class="experience-icon">💻</div>
+                        <div class="experience-details">
+                            <h3>Software Development Intern</h3>
+                            <p class="company-name">Brunswick Corporation</p>
+                            <span class="experience-date">May 2024 - Aug 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Software Development Intern</h3>
-                        <p>Brunswick Corporation</p>
-                        <p>May 2024 - Aug 2024</p>
+                </div>
+
+                <div class="experience-card" data-category="research">
+                    <div class="experience-header">
+                        <div class="experience-icon">🔬</div>
+                        <div class="experience-details">
+                            <h3>Undergraduate Researcher</h3>
+                            <p class="company-name">Teuscher Lab, Maseeh College of Engineering and Computer Science, Portland State University</p>
+                            <span class="experience-date">May 2024 - Aug 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Undergraduate Researcher</h3>
-                        <p>Teuscher Lab, Maseeh College of Engineering and Computer Science, Portland State University</p>
-                        <p>May 2024 - Aug 2024</p>
+                </div>
+
+                <div class="experience-card" data-category="leadership">
+                    <div class="experience-header">
+                        <div class="experience-icon">🌟</div>
+                        <div class="experience-details">
+                            <h3>Women in Engineering Ambassador</h3>
+                            <p class="company-name">The Grainger College of Engineering</p>
+                            <span class="experience-date">Dec 2023 - Aug 2024</span>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Women In Engineering Ambassador</h3>
-                        <p>The Grainger College of Engineering</p>
-                        <p>Dec 2023 - May 2024</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Project Team Member</h3>
-                        <p>MedLaunch UIUC</p>
-                        <p>Aug 2023 - Feb 2024</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Code Sensei</h3>
-                        <p>Code Ninjas</p>
-                        <p>May 2022 - Sep 2022</p>
+                </div>
+
+                <div class="experience-card" data-category="professional">
+                    <div class="experience-header">
+                        <div class="experience-icon">🥷</div>
+                        <div class="experience-details">
+                            <h3>Code Sensei</h3>
+                            <p class="company-name">Code Ninjas</p>
+                            <span class="experience-date">May 2022 - Sep 2022</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
+    <!-- ---------------------------PROJECTS---------------------------------- -->
 <section id="projects" class="section">
     <div class="container">
         <h2 class="section-title">Recent Projects</h2>
@@ -288,6 +374,8 @@
             </div>
         </section> --> 
 
+        <!-- ---------------------------- PUBLICATIONS ---------------------------------- -->
+
         <section id="publications" class="section">
             <div class="container">
                 <h2 class="section-title">Research</h2>
@@ -325,11 +413,11 @@
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <p>Made by Celina Anwar :)</p>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="src/script.js"></script>
 </body>
