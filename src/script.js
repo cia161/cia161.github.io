@@ -120,3 +120,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// code for the project carousel 
+document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length; // Loop forward
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop backward
+        updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel(); // initial position
+});
+
